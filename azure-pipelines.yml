@@ -1,0 +1,30 @@
+resources:
+  repositories:
+    - repository: templates
+      type: git
+      name: pipeline-transversal
+      ref: refs/heads/main
+
+trigger:
+- none
+
+pr:
+  branches:
+    include:
+      - '*'
+      
+variables:
+  - group: credentials-transversal
+  - template: variables.yml
+
+extends:
+  template: pipeline-template.yml@templates
+  parameters:
+    dockerRegistryServiceConnection: ${{ variables.dockerRegistryServiceConnection }}
+    azureSubscriptionServiceConnection: ${{ variables.azureSubscriptionServiceConnection }}
+    imageRepository: ${{ variables.imageRepository }}
+    containerRegistry: ${{ variables.containerRegistry }}
+    dockerfilePath: ${{ variables.dockerfilePath }}
+    tag: ${{ variables.tag }}
+    technology: ${{ variables.technology }}
+    sonarQubeServiceConnection: ${{ variables.sonarQubeServiceConnection }}

@@ -1,0 +1,18 @@
+.img-profile-testimonials{
+    width: 40px;
+    height: 40px;
+}
+
+.img-brand-testimonials{
+    max-width: 165px;
+}
+
+.text-description-testimonials{
+    min-height: 145px;
+    max-height: 146px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

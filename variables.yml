@@ -1,0 +1,9 @@
+variables:
+  dockerRegistryServiceConnection: 'vitxoacrsc'
+  azureSubscriptionServiceConnection: 'SC-Azure-Dev'
+  imageRepository: '$(Build.Repository.Name)'
+  containerRegistry: 'vitxoacr.azurecr.io'
+  dockerfilePath: 'Dockerfile'
+  tag: '$(Build.BuildId)'
+  sonarQubeServiceConnection: 'SC-Sonar'
+  technology: react
