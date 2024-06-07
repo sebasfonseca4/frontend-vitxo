@@ -2,6 +2,8 @@ import LogoVitxo from '../../assets/images/LogoVitxo.png'
 import MediaQuery from 'react-responsive'
 import MenuIcon from '@mui/icons-material/Menu';
 import { NavLink } from 'react-router-dom';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 export const Header = () => {
 
@@ -12,6 +14,13 @@ export const Header = () => {
         }
     }
 
+    const handleGoEvents = () => {
+        const avaliableEvents = document.getElementById('avaliable-events');
+        if (avaliableEvents) {
+            avaliableEvents.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
   return (
     <>
         <MediaQuery minWidth={1224}>
@@ -19,18 +28,15 @@ export const Header = () => {
                 <div className="container">
                     {/* Header Top */}
                     <div className="row py-4 d-flex justify-content-between grey-medium">
-                        <div className="col-6">
-                            <span className='me-3'>
+                        <div className="col-12 text-end">
+                            <span className='me-3 align-items-center'>
                                 Español
+                                <KeyboardArrowDownIcon className='ms-2'/>
                             </span>
-                            <span>
+                            <span className='me-3'>
                                 Soporte
                             </span>
-                        </div>
-                        <div className="col-6 text-end">
-                            <span>
-                                Blog
-                            </span>
+                            <ShoppingCartIcon/>
                         </div>
                     </div>
                     {/* Header Main */}
@@ -48,10 +54,17 @@ export const Header = () => {
                                             <a className='text-decoration-none grey-medium-light ' href="/">Quienes somos</a>
                                         </li>
                                         <li className='me-5'>
-                                            <a className='text-decoration-none grey-medium-light ' href="/">Servicios</a>
+                                            <a className='text-decoration-none grey-medium-light ' href="/">
+                                                Servicios
+                                                <KeyboardArrowDownIcon className='ms-2'/>
+                                            </a>
                                         </li>
                                         <li className='me-5'>
-                                            <a className='text-decoration-none grey-medium-light ' href="/">Eventos</a>
+                                            <button 
+                                                className='text-decoration-none grey-medium-light bg-transparent border-0' onClick={handleGoEvents}
+                                            >
+                                                Eventos
+                                            </button>
                                         </li>
                                     </ul>
                                 </div>
@@ -65,9 +78,9 @@ export const Header = () => {
                                     </button>
                                 </div>
                                 <div className="col-4 float-end ">
-                                    <button className='button-red'>
+                                    <NavLink to="/login" className='button-red text-decoration-none'>
                                         Iniciar sesión
-                                    </button>
+                                    </NavLink>
                                 </div>
                             </div>
                         </div>

@@ -9,14 +9,11 @@ export const CreateAccountForm = () => {
   return (
     <>
       <div className="container-fluid d-flex align-items-center justify-content-center">
-        <div className="container bg-grey-medium my-5 rounded-4 pb-3">
-          <div className="col-12 col-md-5 mx-auto py-5">
-            <h1 className="fs-3 fw-bold text-dark-blue text-center mb-3">
-              Crea tu cuenta
-            </h1>
+        <div className="container mb-5 rounded-4 pb-3">
+          <div className="col-12 mx-auto pt-3 ">
             <div>
               <form action="">
-                <div className="d-flex flex-column">
+                <div className="d-flex flex-column text-start">
                   <label htmlFor="">Correo electronico</label> 
                   <div className='bg-white rounded-4 d-flex align-items-center justify-content-between px-2 py-3 mt-2 mb-3'>
                     <input className="w-100 border-0 bg-transparent grey-medium focus-none" type="email" name="" id="" />  
@@ -41,9 +38,14 @@ export const CreateAccountForm = () => {
                   </div>
                 </div>    
               </form>
-              <p className='text-center grey-medium mt-3'>
+              <p className='text-center text-dark mt-3'>
                 La contraseña debe tener mínimo: 8 caracteres, un número y una letra mayúscula.
               </p>
+              <div className='line-100 mb-4 position-relative'>
+                <span className='position-absolute top-50 start-50 translate-middle bg-green-light px-2'>
+                  o
+                </span>
+              </div>
               <div className="row">
                 <div className="col-12 col-md-6">
                   <span className='d-flex justify-content-center align-items-center bg-white w-100 mb-3 rounded-4 py-3'>

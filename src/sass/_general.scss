@@ -165,11 +165,11 @@ body {
 }
 
 .h-img-register {
-  max-height: 1350px;
+  max-height: 950px;
 }
 
 .h-block {
-  max-height: 650px;
+  max-height: 690px;
 }
 .slick-dots li button::before {
   font-size: 12px;
@@ -201,4 +201,9 @@ body {
 
 .focus-none{
   outline: none;
+}
+
+.line-100{
+  height: 1px;
+  background: $blue-dark;
 }

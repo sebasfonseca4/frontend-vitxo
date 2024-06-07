@@ -26,24 +26,18 @@ export const CardEvents = ( { events }) => {
                             }
                         </div>
                     </div>
-                    <div className="row pt-2">
+                    <div className="row pt-2 my-2 d-flex align-items-center">
                         <div className="col-6 d-flex flex-column text-start">
-                            <span className="lh-1 mb-1 fw-semibold">
-                                Precio
-                            </span>
-                            <span className="fw-bolder green-light text-fs-extra-large">
-                                $ { Math.floor(event.priceEvent) }
-                            </span>
-                        </div>
-                        <div className="col-6 d-flex flex-column text-end">
                             <span className="text-dark fw-bolder mb-0 lh-1 mb-1 text-truncate-event-card">
                                 { event.nameEvent }
                             </span>
-                            <span className="text-dark-blue fw-bolder lh-1 ">
-                                +{ Math.floor(event.numberEventsCreate) }
+                        </div>
+                        <div className="col-6 d-flex flex-column text-start">
+                            <span className="lh-1 mb-0 fw-normal">
+                                Precio
                             </span>
-                            <span className="lh-1 fw-semibold  text-dark-blue text-fs-medium">
-                                Eventos creados
+                            <span className="fw-bolder green-light fs-3">
+                                ${ Math.floor(event.priceEvent) }
                             </span>
                         </div>
                     </div>

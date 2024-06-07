@@ -5,7 +5,7 @@ import { CardEvents } from './CardEvents'
 export const AvailableEvents = () => {
 
     const [events, setEvents] = useState([]);
-    const [visibleEvents, setVisibleEvents] = useState(8);
+    const [visibleEvents, setVisibleEvents] = useState(12);
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
@@ -24,14 +24,14 @@ export const AvailableEvents = () => {
       
     const loadMoreEvents = () => {        
         setLoading(true);
-        setVisibleEvents((prevVisibleEvents) => prevVisibleEvents + 8);
+        setVisibleEvents((prevVisibleEvents) => prevVisibleEvents + 12);
         setLoading(false);
     };
 
   return (
     <>
         <div className="container-fluid bg-grey-light pt-4">
-            <div className="container py-4">
+            <div className="container py-4" id="avaliable-events">
                 <div className='text-dark-blue text-center w-100'>
                     <h2 className='fw-bolder text-title-principal'>
                         EVENTOS DISPONIBLES
