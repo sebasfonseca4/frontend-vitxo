@@ -4,21 +4,30 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { NavLink } from 'react-router-dom';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import { useNavigate } from "react-router-dom";
 
 export const Header = () => {
 
+    const navigate = useNavigate();
+
     const handleGoRegister = () => {
-        const registerForm = document.getElementById('register-form');
-        if (registerForm) {
-            registerForm.scrollIntoView({ behavior: 'smooth' });
-        }
+        navigate('/')
+        setTimeout(() => {
+            const registerForm = document.getElementById('register-form');
+            if (registerForm) {
+              registerForm.scrollIntoView({ behavior: 'smooth' });
+            }
+        }, 100); 
     }
 
     const handleGoEvents = () => {
-        const avaliableEvents = document.getElementById('avaliable-events');
-        if (avaliableEvents) {
-            avaliableEvents.scrollIntoView({ behavior: 'smooth' });
-        }
+        navigate('/')
+        setTimeout(() => {
+            const avaliableEvents = document.getElementById('avaliable-events');
+            if (avaliableEvents) {
+                avaliableEvents.scrollIntoView({ behavior: 'smooth' });
+            }            
+        }, 100);
     }
 
   return (
@@ -29,7 +38,7 @@ export const Header = () => {
                     {/* Header Top */}
                     <div className="row py-4 d-flex justify-content-between grey-medium">
                         <div className="col-12 text-end">
-                            <span className='me-3 align-items-center'>
+                            <span className='me-3 align-items-center d-none'>
                                 Español
                                 <KeyboardArrowDownIcon className='ms-2'/>
                             </span>
@@ -77,7 +86,7 @@ export const Header = () => {
                                         Registrate
                                     </button>
                                 </div>
-                                <div className="col-4 float-end ">
+                                <div className="col-5 col-xxl-4 float-end ">
                                     <NavLink to="/login" className='button-red text-decoration-none'>
                                         Iniciar sesión
                                     </NavLink>

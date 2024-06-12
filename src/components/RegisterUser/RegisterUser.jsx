@@ -6,7 +6,7 @@ export const RegisterUser = () => {
     <>
         <div className="container-fluid bg-green-light">
             <div className="row">
-                <div className="col-12 col-md-4 container py-5 text-dark-blue my-auto text-center" id="register-form">
+                <div className="col-12 col-md-6 col-xxl-4 container py-5 text-dark-blue my-auto text-center" id="register-form">
                     <h1 className='fw-bold pt-3 text-title-font'>
                         ¿Listo para iniciar tu sorteo?
                     </h1>
