@@ -19,7 +19,7 @@ export const RegisterUser = () => {
                     {/* Formulario de registro */}
                     <CreateAccountForm/>
                 </div>
-                <div className="col-6 d-none d-md-block mx-0 px-0">
+                <div className="col-12 col-md-6 d-none d-xxl-block mx-0 px-0">
                     <div className="w-100 h-100 h-img-register">
                         <img className="object-fit-cover  w-100 h-100" src={ImgRegister} alt="Imagen registro" />
                     </div>

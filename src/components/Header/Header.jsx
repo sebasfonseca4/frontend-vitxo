@@ -37,8 +37,8 @@ export const Header = () => {
                 <div className="container">
                     {/* Header Top */}
                     <div className="row py-4 d-flex justify-content-between grey-medium">
-                        <div className="col-12 text-end">
-                            <span className='me-3 align-items-center d-none'>
+                        <div className="col-12 text-end d-none">
+                            <span className='me-3 align-items-center'>
                                 Español
                                 <KeyboardArrowDownIcon className='ms-2'/>
                             </span>
@@ -102,7 +102,7 @@ export const Header = () => {
             <div className="container-fluid bg-dark-blue pb-0 text-white pb-4">
                 {/* Header Top */}
                 <div className="container">
-                    <div className="row py-4 d-flex justify-content-between grey-medium">
+                    <div className="row py-4 d-flex justify-content-between grey-medium d-none">
                         <div className="col-6">
                             <span className='me-3'>
                                 Español
@@ -119,7 +119,7 @@ export const Header = () => {
                     </div>
                 </div>
                 {/* Header Main */}
-                <div className="row pb-4">
+                <div className="row py-4">
                     <div className="col-8">
                         <img src={LogoVitxo} alt="Logo-Vitxo" />
                     </div>
