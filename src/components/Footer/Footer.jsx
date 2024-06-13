@@ -68,7 +68,7 @@ export const Footer = () => {
                     </div>
                     <div className="col-6 col-md-3  d-flex flex-column">
                         <h5 className="text-white mb-3">
-                            Contácto
+                            Contacto
                         </h5>
                         <div className='d-flex flex-column text-white'>
                             <span className='mb-2'>

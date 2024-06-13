@@ -83,7 +83,7 @@ export const Header = () => {
                             <div className="row d-flex align-items-center justify-content-end text-end">
                                 <div className="col-5">
                                     <button className='button-red-underline' onClick={handleGoRegister}>
-                                        Registrate
+                                        Regístrate
                                     </button>
                                 </div>
                                 <div className="col-5 col-xxl-4 float-end ">
