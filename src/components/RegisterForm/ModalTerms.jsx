@@ -14,12 +14,10 @@ const ModalTerms = ({ isOpen, onAccept, onClose }) => {
   const descriptionElementRef = useRef(null);
   const boxDescriptionRef = useRef(null);
   const [isButtonEnabled, setIsButtonEnabled] = useState(false);
-  console.log(descriptionElementRef)
 
   useEffect(() => {
     if (isOpen) {
       const { current: descriptionElement } = descriptionElementRef;
-      console.log(descriptionElement)
       if (descriptionElement !== null) {
         descriptionElement.focus();
       }

@@ -32,7 +32,7 @@ export const Header = () => {
 
   return (
     <>
-        <MediaQuery minWidth={1224}>
+        <MediaQuery minWidth={1200}>
             <div className="container-fluid bg-dark-blue pb-0 text-white">
                 <div className="container">
                     {/* Header Top */}
@@ -42,7 +42,7 @@ export const Header = () => {
                                 Español
                                 <KeyboardArrowDownIcon className='ms-2'/>
                             </span>
-                            <span className='me-3'>
+                            <span className='me-3 d-none'>
                                 Soporte
                             </span>
                             <ShoppingCartIcon/>
@@ -52,12 +52,12 @@ export const Header = () => {
                     <div className="row pb-4 align-items-center">
                         <div className="col-7 align-items-center">
                             <div className="row d-flex align-items-center">
-                                <div className="col-4">
+                                <div className="col-3">
                                     <NavLink to="/">
-                                        <img src={LogoVitxo} alt="Logo-Vitxo" />
+                                        <img className="img-fluid" src={LogoVitxo} alt="Logo-Vitxo" />
                                     </NavLink>
                                 </div>
-                                <div className="col-8">
+                                <div className="col-9 ps-4">
                                     <ul className='d-flex list-unstyled align-items-center mb-0'>
                                         <li className='me-5'>
                                             <a className='text-decoration-none grey-medium-light ' href="/">Quienes somos</a>
@@ -98,7 +98,7 @@ export const Header = () => {
                 </div>
             </div> 
         </MediaQuery>       
-        <MediaQuery maxWidth={1224}>
+        <MediaQuery maxWidth={1200}>
             <div className="container-fluid bg-dark-blue pb-0 text-white pb-4">
                 {/* Header Top */}
                 <div className="container">

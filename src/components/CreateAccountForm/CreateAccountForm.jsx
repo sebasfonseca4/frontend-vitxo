@@ -52,7 +52,7 @@ export const CreateAccountForm = () => {
                 <div className="d-flex flex-column text-start">
                   <label htmlFor="email">Correo electrónico</label>
                   <div className="bg-white rounded-4 d-flex align-items-center justify-content-between px-2 py-3 mt-2 mb-3">
-                    <Field className="w-100 border-0 bg-transparent grey-medium focus-none" type="email" name="email" />
+                    <Field className="w-100 border-0 bg-transparent grey-medium focus-none" type="email" name="email" placeholder="Correo electrónico"/>
                   </div>
                   <ErrorMessage name="email" component="div" className="alert alert-danger"/>
                 </div>

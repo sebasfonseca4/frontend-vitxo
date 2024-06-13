@@ -83,7 +83,7 @@ export const BannerHome = () => {
             imgsBanner.map(banner => (
               <div key={banner.id} className="container-fluid d-flex justify-content-center h-block px-0 ">
                 <div className="w-100 mx-0 px-0">
-                  <a href="https://www.google.com" target="_blank">
+                  <a href="/">
                     {
                       isDesktop &&
                       <img
@@ -117,7 +117,7 @@ export const BannerHome = () => {
             {
               imgsBanner.map(banner => (
                 <div className="text-center d-flex justify-content-center" key={banner.id}>
-                    <img className="brand-width-slider" src={banner.srcMobile} alt={banner.alt} />
+                    <img className="brand-width-slider" src={LogoIpsum} alt={banner.alt} />
                 </div>
               ))
             }

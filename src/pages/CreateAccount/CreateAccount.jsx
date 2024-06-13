@@ -3,6 +3,7 @@ import Stepper from '@mui/material/Stepper';
 import Step from '@mui/material/Step';
 import StepButton from '@mui/material/StepButton';
 import { PersonalInformationForm } from '../../components/RegisterForm/PersonalInformationForm';
+import { InConstruction } from '../../Utils/ScrollTop/InConstruction/InConstruction';
 
 
 const PlaceholderComponent = ({ text }) => <div>{text}</div>;
@@ -34,10 +35,12 @@ export const CreateAccount = () => {
       isLastStep() && !allStepsCompleted()
         ? steps.findIndex((step, i) => !(i in completed))
         : activeStep + 1;
+    window.scrollTo(0,0);
     setActiveStep(newActiveStep);
   };
   
   const handleStep = (step) => () => {
+    window.scrollTo(0,0);
     setActiveStep(step);
   };
 
@@ -53,7 +56,7 @@ export const CreateAccount = () => {
       case 0:
         return <PersonalInformationForm handleComplete={handleComplete} />;
       case 1:
-        return <PlaceholderComponent text="Formulario de Identidad aquí" />;
+        return <InConstruction/>;
       case 2:
         return <PlaceholderComponent text="Formulario de Información Bancaria aquí" />;
       case 3:

@@ -1,6 +1,11 @@
+import { InConstruction } from "../../Utils/ScrollTop/InConstruction/InConstruction"
 
 export const Login = () => {
   return (
-    <div>Login</div>
+    <>
+      <div className="container">
+        <InConstruction/>
+      </div>
+    </>
   )
 }

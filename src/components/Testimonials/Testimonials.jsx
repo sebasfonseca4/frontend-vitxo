@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Slider from "react-slick";
 import axios from "axios";
+import ImgBrand from '../../assets/images/Logo.png'
 
 export const Testimonials = () => {
   const [testimonials, setTestimonials] = useState([]);
@@ -20,7 +21,7 @@ export const Testimonials = () => {
 
   let settingsBanner = {
     dots: false,
-    arrows: false,
+    arrows: true,
     infinite: true,
     autoplay: true,
     centerMode: true,
@@ -60,7 +61,7 @@ export const Testimonials = () => {
                     <div className="mx-auto mt-2 mb-4">
                       <img
                         className="img-brand-testimonials img-fluid"
-                        src={testimonial.brand}
+                        src={ImgBrand}
                         alt="Logo Ipsum"
                       />
                     </div>

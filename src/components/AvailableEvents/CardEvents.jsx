@@ -1,12 +1,13 @@
-export const CardEvents = ( { events }) => {
+import ImgEvent from '../../assets/images/ImgEvento.png'
 
+export const CardEvents = ( { events }) => {
   return (
     <>
         {events.map(event => 
             <div className="col-12 col-md-4 col-lg-3 mb-3 "  key={event.id}>
                 <div className="container bg-white p-3 shadow-sm rounded">
                     <div className="box-img-event-card mx-auto">
-                        <img className="object-fit-cover w-100 h-100 rounded-3" src={event.imgEvent} alt="Imagen de evento" />
+                        <img className="object-fit-cover w-100 h-100 rounded-3" src={ImgEvent} alt="Imagen de evento" />
                     </div>
                     <h4 className="pt-3 text-dark fw-semibold mb-1 text-truncate">
                         { event.nameProduct }

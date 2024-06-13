@@ -131,7 +131,7 @@ export const Footer = () => {
                         </p>
                     </div>
                     <div className="col-6 d-flex justify-content-end">
-                        <p className="text-white text-end ms-3">
+                        <p className="text-white text-end ms-3 d-none">
                             <a className='grey-medium text-decoration-none' href="/">
                                 Política 1
                             </a>

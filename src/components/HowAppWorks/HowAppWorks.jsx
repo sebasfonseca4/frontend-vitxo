@@ -39,7 +39,7 @@ export const HowAppWorks = () => {
                                 </span>
                             </div>
                             <p className='mt-2 text-fs-large'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, qui blanditiis. Ex quia est cupiditate dolorem! Inventore laboriosam alias sapiente ipsam exercitationem est commodi, nihil quia officiis excepturi! Odit, obcaecati.
+                                Es este paso encontraras la opción de crear tu cuenta y diligenciar un formulario de datos que nos permitirán validar tu identidad y dar paso a la carga de documentos que se requieren para el estudio de la asignación de tu código de gestor.
                             </p>
                         </div>
                         <div 
@@ -50,11 +50,11 @@ export const HowAppWorks = () => {
                             <div className='d-flex align-items-center '>
                                 <img className="me-3" src={activeIcon === "completedEvent" ? IconCompletedEventActive : IconCompletedEvent} alt="" />                                
                                 <span className='fw-bold text-fs-extra-large'>
-                                    Completa tu evento
+                                    Crea tu evento
                                 </span>
                             </div>
                             <p className='mt-2 text-fs-large'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, qui blanditiis. Ex quia est cupiditate dolorem! Inventore laboriosam alias sapiente ipsam exercitationem est commodi, nihil quia officiis excepturi! Odit, obcaecati.
+                                En esta opción podrás ingresar la información de tu evento y/o sorteo con los detalles que permiten visibilizar la mecánica, precios de boletas, imagen y categoría del producto, nombre del proveedor, loterías del sorteo o locación del evento.
                             </p>
                         </div>
                         <div 
@@ -65,11 +65,11 @@ export const HowAppWorks = () => {
                             <div className='d-flex align-items-center '>
                                 <img className="me-3" src={activeIcon === "activeLottery" ? IconDashboardActive : IconDashboard} alt="" />                                
                                 <span className='fw-bold text-fs-extra-large'>
-                                    Activa el sorteo
+                                    Activa tu sorteo y/o evento
                                 </span>
                             </div>
                             <p className='mt-2 text-fs-large'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, qui blanditiis. Ex quia est cupiditate dolorem! Inventore laboriosam alias sapiente ipsam exercitationem est commodi, nihil quia officiis excepturi! Odit, obcaecati.
+                                Te permite publicar el evento a través de una platilla personalizada para comunicarlo a través de redes sociales u otros canales de comunicación.
                             </p>
                         </div>
                         <div 
@@ -80,11 +80,11 @@ export const HowAppWorks = () => {
                             <div className='d-flex align-items-center '>
                                 <img className="me-3" src={activeIcon === "dashboard" ? IconActiveLotteryActive : IconActiveLottery} alt="" />                                
                                 <span className='fw-bold text-fs-extra-large'>
-                                    Maneja tu dashboard de ganacias
+                                    Maneja tu dashboard de ganancias
                                 </span>
                             </div>
                             <p className='mt-2 text-fs-large'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, qui blanditiis. Ex quia est cupiditate dolorem! Inventore laboriosam alias sapiente ipsam exercitationem est commodi, nihil quia officiis excepturi! Odit, obcaecati.
+                                En este dashboard podrás visualizar la información detallada de los eventos y/o sorteos como: Inversión del evento, Saldo total vendido, Total de boletas vendidas, Distribución de comisión por los participantes del evento y/o sorteo.
                             </p>
                         </div>
                         <button className='button-red mt-3'>
