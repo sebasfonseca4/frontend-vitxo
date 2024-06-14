@@ -13,6 +13,8 @@ import IconActiveLotteryActive from '../../assets/icons/iconActiveLotteryActive.
 import IconDashboard from '../../assets/icons/iconDashboard.svg'
 import IconDashboardActive from '../../assets/icons/iconDashboardActive.svg'
 
+import ImgVideo from '../../assets/images/video-como-funciona.png'
+
 export const HowAppWorks = () => {
 
     const [activeIcon, setActiveIcon] = useState(null);
@@ -26,7 +28,7 @@ export const HowAppWorks = () => {
                     ¿COMO FUNCIONA?
                 </h2>
                 <div className="row mt-4">
-                    <div className="col-12 col-md-6 mb-5 mb-md-0">
+                    <div className="col-12 col-lg-6 mb-5 mb-lg-0">
                         <div 
                             className='mt-3 mb-3 p-2 rounded-3 contenedor-step-works cursor-pointer'
                             onMouseEnter={() => setActiveIcon('register')}
@@ -91,9 +93,10 @@ export const HowAppWorks = () => {
                             Comienza ahora
                         </button>
                     </div>
-                    <div className="col-12 col-md-6">
+                    <div className="col-12 col-lg-6">
                         <div className="rounded w-100 h-100">
-                            <video
+                            <img className='rounded-4 w-100 h-100 object-fit-cover' src={ImgVideo} alt="Video como funciona" />
+                            {/* <video
                                 className='rounded-4 w-100 h-100 object-fit-cover'
                                 controls
                                 loop
@@ -104,7 +107,7 @@ export const HowAppWorks = () => {
                                 src="https://assets.codepen.io/6093409/river.mp4"
                                 type="video/mp4"
                                 />
-                            </video>
+                            </video> */}
                         </div>
                     </div>
                 </div>

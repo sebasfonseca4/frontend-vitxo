@@ -27,7 +27,7 @@ export const PersonalInformationForm = ({ handleComplete }) => {
                 Natural
             </option>
             <option className="grey-dark" value="juridica">
-                Juridica
+                Jurídica
             </option>
           </select>        
         </div>

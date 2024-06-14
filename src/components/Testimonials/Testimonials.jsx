@@ -47,9 +47,7 @@ export const Testimonials = () => {
             EL ESCENARIO DE LOS GANADORES
           </h2>
           <p className="text-center grey-medium col-8 mx-auto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-            nesciunt veniam dolores recusandae cupiditate, eaque voluptates
-            illum dolorem! Corrupti saep1ectetur nesciunt veniam dolores recusa
+            Estamos emocionados de anunciar a los ganadores de nuestros eventos. Gracias a todos los participantes por su increíble esfuerzo y dedicación. Sin más preámbulos, aquí están los ganadores.
           </p>
         </div>
         <div className="container my-2">

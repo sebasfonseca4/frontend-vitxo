@@ -37,7 +37,7 @@ export const AvailableEvents = () => {
                         EVENTOS DISPONIBLES
                     </h2>
                     <p className=''>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ut vel ex corrupti odit voluptas autem cupiditate error amet aliquid. Alias error facere fugiat doloribus veritatis animi laboriosam commodi similique delectus magnam autem fuga, obcaecati nemo illo cum officiis ducimus consequuntur voluptates molestias! Optio ullam soluta culpa magni et quis?
+                        ¡No te pierdas los emocionantes eventos que tenemos preparados para ti! Aquí te dejamos una lista con todas las actividades que podrás disfrutar.
                     </p>
                 </div>
                 <div className="row pt-3">

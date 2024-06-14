@@ -12,7 +12,7 @@ pr:
   branches:
     include:
       - '*'
-      
+
 variables:
   - group: credentials-transversal
   - template: variables.yml
@@ -28,3 +28,5 @@ extends:
     tag: ${{ variables.tag }}
     technology: ${{ variables.technology }}
     sonarQubeServiceConnection: ${{ variables.sonarQubeServiceConnection }}
+    kubernetesContext: 'default'
+    kubernetesManifestPath: 'k8s-deployment.yml'

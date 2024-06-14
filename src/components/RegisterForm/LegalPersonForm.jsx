@@ -102,7 +102,7 @@ export const LegalPersonForm = ({ handleComplete }) => {
                   <div className="row">
                     <div className="col-3 col-md-3 pe-1">
                       <label
-                        className="w-100 py-3 px-3 fs-5 border-0 rounded-end rounded-4 text-dark bg-white fw-semibold text-center mb-3"
+                        className="w-100 py-3 px-3 fs-5 border-0 rounded-end rounded-4 text-dark bg-white grey-dark text-center mb-3"
                         htmlFor="nit"
                       >
                         NIT
@@ -131,21 +131,23 @@ export const LegalPersonForm = ({ handleComplete }) => {
                 <div className="col-12 col-md-6">
                   <div className="row">
                     <div className="col-3 col-md-3 pe-1">
-                      <Field
-                        as="select"
-                        className="w-100 text-center py-3 px-3 fs-5 border-0 rounded-end rounded-4 grey-dark bg-white mb-3"
-                        name="tipoDocumentoRepresentanteLegal"
-                      >
-                        <option className="grey-dark" value="CC">
-                          CC
-                        </option>
-                        <option className="grey-dark" value="CE">
-                          CE
-                        </option>
-                        <option className="grey-dark" value="Pasaporte">
-                          Pasaporte
-                        </option>
-                      </Field>
+                      <div className="w-100 py-3 px-3 fs-5 border-0 rounded-end rounded-4 text-dark bg-white fw-semibold text-center mb-3">
+                        <Field
+                          as="select"
+                          className="w-100 border-0 bg-transparent grey-dark focus-none fs-5 text-center"
+                          name="tipoDocumentoRepresentanteLegal"
+                        >
+                          <option className="grey-dark" value="CC">
+                            CC
+                          </option>
+                          <option className="grey-dark" value="CE">
+                            CE
+                          </option>
+                          <option className="grey-dark" value="Pasaporte">
+                            Pasaporte
+                          </option>
+                        </Field>                        
+                      </div>
                     </div>
                     <div className="col-9 col-md-9 ps-1">
                       <Field
@@ -179,44 +181,48 @@ export const LegalPersonForm = ({ handleComplete }) => {
               </div>
               <div className="row">
                 <div className="col-12 col-md-6">
-                  <Field
-                    as="select"
-                    className="w-100 py-3 px-3 fs-5 border-0 rounded-4 grey-dark bg-white mb-3"
-                    name="departamentoJuridica"
-                    onChange={(e) => {
-                      handleChange(e);
-                      handleDepartmentChange(e);
-                    }}
-                  >
-                    <option className="grey-dark" value="" disabled>
-                      Departamento
-                    </option>
-                    {departments.map((department) => (
-                      <option
-                        className="grey-dark"
-                        key={department.id}
-                        value={department.departamento}
-                      >
-                        {department.departamento}
+                  <div className="w-100 py-3 px-3 fs-5 border-0 rounded-4 grey-dark bg-white mb-3">
+                    <Field
+                      as="select"
+                      className="w-100 border-0 bg-transparent grey-dark focus-none fs-5"
+                      name="departamentoJuridica"
+                      onChange={(e) => {
+                        handleChange(e);
+                        handleDepartmentChange(e);
+                      }}
+                    >
+                      <option className="grey-dark" value="" disabled>
+                        Departamento
                       </option>
-                    ))}
-                  </Field>
+                      {departments.map((department) => (
+                        <option
+                          className="grey-dark"
+                          key={department.id}
+                          value={department.departamento}
+                        >
+                          {department.departamento}
+                        </option>
+                      ))}
+                    </Field>
+                  </div>
                 </div>
                 <div className="col-12 col-md-6">
-                  <Field
-                    as="select"
-                    className="w-100 py-3 px-3 fs-5 border-0 rounded-4 grey-dark bg-white mb-3"
-                    name="ciudadJuridica"
-                  >
-                    <option className="grey-dark" value="" disabled>
-                      Ciudad
-                    </option>
-                    {cities.map((city, index) => (
-                      <option key={index} value={city}>
-                        {city}
+                  <div className="w-100 py-3 px-3 fs-5 border-0 rounded-4 grey-dark bg-white mb-3">
+                    <Field
+                      as="select"
+                      className="w-100 border-0 bg-transparent grey-dark focus-none fs-5"
+                      name="ciudadJuridica"
+                    >
+                      <option className="grey-dark" value="" disabled>
+                        Ciudad
                       </option>
-                    ))}
-                  </Field>
+                      {cities.map((city, index) => (
+                        <option key={index} value={city}>
+                          {city}
+                        </option>
+                      ))}
+                    </Field>
+                  </div>
                 </div>
               </div>
             </>
